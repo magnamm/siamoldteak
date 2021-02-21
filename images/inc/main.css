@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+.h1{
+	font-size:1.4em;
+	padding:0px 0px 15px 0px;
+	text-transform:uppercase;
+	}
+/**************************************************/
+#main {
+	width:410px;
+	clear:both;
+	float:left;
+	color:#333333;
+}
+
+#copy {
+	height:25px;
+	padding:20px 40px 20px 20px;
+}
+
+#copy_short {
+	height:48px;
+	padding:20px 40px 20px 20px;
+}
+
+#copy_long {
+	height:652px;
+	padding:20px 40px 20px 20px;
+	overflow:auto;
+}
+
+#copy h1, #copy_long h1, #copy_short h1, .scroll-pane h1 {
+	font-size:1.4em;
+	padding:0px 0px 15px 0px;
+	text-transform:uppercase;
+	
+}
+
+#copy h2, #copy_long h2, #copy_short h2, .scroll-pane h2 {
+	font-size:1.4em;
+	padding:5px 0px 5px 0px;
+}
+
+#copy h3, #copy_long h3, #copy_short h3, .scroll-pane h3 {
+	font-size:1.2em;
+	padding:0px 0px 5px 0px;
+}
+
+#copy p, #copy_long p, #copy_short p, .scroll-pane p {
+	font-size:1.1em;
+	padding:0px 0px 10px 0px;
+}
+
+#copy h4, #copy_long h4, #copy_short h4, .scroll-pane h4 {
+	font-size:1.1em;
+	padding:0px 0px 15px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#copy a, #copy_long a, #copy_short a, .scroll-pane a {
+	font-size:1.1em;
+}
+
+#copy_long .left {
+	width:155px;
+	float:left;
+}
+
+#copy_long .right {
+	width:155px;
+	float:right;
+	margin-left:20px;
+}
+
+/**************************************************/
+#selection {
+	height:435px;
+	overflow:auto;
+	margin:0px 15px 0px 0px;
+}
+
+.scroll-pane {
+	overflow: auto;
+}
+
+.scroll_thumbs {
+	width: 395px;
+	height: 435px;
+}
+
+.scroll_copy_long {
+	height:660px;
+	width: 355px;
+	padding:0px 20px 20px 20px;
+	margin:20px 15px 0px 0px;
+}
+
+.scroll_press_long {
+	height:592px;
+	width: 395px;
+}
+
+.scroll_copy_long .left {
+	width:155px;
+	float:left;
+}
+
+.scroll_copy_long .right {
+	width:155px;
+	float:right;
+	margin-left:20px;
+}
+
+#selection_long {
+	height:604px;
+	overflow:auto;
+	margin:0px 15px 0px 0px;
+}
+
+table.landscape {
+	margin:0px 0px 0px 15px;
+}
+
+table.landscape td {
+	padding:0px 10px 10px 0px;
+	text-align:center;
+}
+
+table.square {
+	margin:0px 0px 0px 15px;
+}
+
+table.square td {
+	padding:0px 10px 10px 0px;
+	text-align:center;
+}
+
+/**************************************************/
+#picture {
+	width:600px;
+	float:right;
+	overflow:hidden;
+	color:#333333;
+	height:850px;
+}
+
+#image {
+	width:610px;
+}
+#onpageCaption {
+	width:590px;
+	padding:10px 10px 10px 10px;
+	font-size:1.2em;
+}
+
+#onpageCaption b {
+	font-weight:bold;	
+}
+
+#onpageCaption i {
+	font-style:italic;	
+}
+
+#onpageCaption a {
+}
+
+.caption_hidden {
+	display:none;
+}
+
+.inline_image {
+	float:right;
+	padding:0px 0px 5px 20px;
+}
+
+.cursor_zoom {
+	cursor: pointer;
+}
+
+
+/**************************************************/
+#registeredoffice {
+	position:absolute;
+	left:15px;
+	top:700px;
+	width:170px;
+	height:100px;
+	z-index:1;
+}
+
+#registeredoffice p {
+	font-size:0.9em;
+	color:#745d74;
+	padding:0px 0px 5px 0px;
+}

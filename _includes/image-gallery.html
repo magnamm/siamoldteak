@@ -1,0 +1,91 @@
+<style>
+    .masonry { /* Masonry container */
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    /* display: inline-block; */
+    margin: 20px 10px 10px 10px;
+    padding: 2px;
+    width: 30%;
+    object-fit: scale-down;
+
+    }
+    img.product {
+        width: 100%;
+        height: 150px;
+
+        object-fit: scale-down;
+    }
+</style>
+
+<div class="masonry">
+    {% for file in site.static_files %}
+        {% if file.path contains include.folder %}
+        {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' or file.extname == '.PNG' or file.extname == '.png' %}
+            {% assign filenameparts = file.path | split: "/" %}
+            {% assign filename = filenameparts | last | replace: file.extname,"" %}
+            
+                {% if filename contains "-" %}
+                    {% if filename contains "-01" %}
+                    {% assign current = filename | split: "-" | first %}
+                    <div class="item">
+                    <a href="{{ include.folder }}/{{ current }}" title="{{ filename }}">
+                        <img src="{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}" class="product"><br>
+
+                        <span>SOT/{{ filename | split: "-" | first}} </span>
+                        
+                    </a>
+                    
+                </div>
+                    {%endif%}
+                {% else %}
+                <div class="item">
+                <a id="grouped_elements" rel="group1" href="{{ file.path | relative_url }}" title="{{ filename }}">
+                    <img src="{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}" class="product"><br>
+
+                    <span>SOT/{{ filename | split: "-" | first}}</span>
+                </a>
+                </div>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<style>
+    #single_image:hover{
+        opacity: 0.5;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+
+/* This is basic - uses default settings */
+
+$("a#single_image").fancybox();
+
+/* Using custom settings */
+
+$("a#inline").fancybox({
+    'hideOnContentClick': true
+});
+$("a#grouped_elements").fancybox();
+
+/* Apply fancybox to multiple items */
+
+$("a.group").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600, 
+    'speedOut'		:	200, 
+    'overlayShow'	:	false,
+    'width'         :   100
+});
+
+});
+</script>

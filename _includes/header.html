@@ -1,0 +1,67 @@
+<style>
+    .logo{
+        object-fit:scale-down;
+        width: 100%;
+        max-height: 180px;
+    }
+    .topImg{
+        object-fit: cover;
+        width: 20%;
+        height: 70%;
+        max-height: 180px;
+    }
+    .topImg:hover{
+        filter: opacity(.5);
+    }
+    .nav-item{
+        font-size: small;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .nav-product{
+        font-size: small;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .uk-grid-margin{
+        margin-top: 10px !important;
+    }
+</style>
+<div class="row header">
+    <div class="col-md-3">
+        <a href="{{site.url}}"><img src="/images/logo.jpg" style="border: none;" class="logo"></a> 
+    </div>
+    <div class="col-md-9 col-sm-12">
+        <img src="/images/top/top1.jpg" class="topImg"> 
+        <img src="/images/top/top2.jpg" class="topImg"> 
+        <img src="/images/top/top3.jpg" class="topImg"> 
+        <img src="/images/top/top4.jpg" class="topImg">
+
+    </div>
+</div>
+<div class="row header">
+    <div class="col-md-3">
+        <ul>
+            {% assign site_page = site.pages | sort: "pindex" %}
+            {% for page in site_page | sort: "pindex" %}
+                {% if page.pindex>0 %}
+                <li class="nav-item">
+                    <a href="{{ page.url }}">{{page.title}} </a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-9 col-xs-12">
+        <div class="container">
+            <div class="row d-flex">
+                {% assign site_page = site.posts | sort: "title%}
+                {% for page in site_page | sort: "title" %}
+                    <div class="col-sm-3 col-xs-12 nav-product ">
+                        <a href="{{ page.url }}">- {{page.title}} </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

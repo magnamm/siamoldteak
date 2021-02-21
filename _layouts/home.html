@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    <style>
+      .header {
+        background-color: #dfd5c9;
+        padding: 20px 20px 20px 20px;
+        grid-area: header;
+      }
+      .aside {
+        border-left: 6px solid #3c0702;
+        background-color: #4f0902;
+        color: aliceblue;
+        padding: 50px 30px 50px 20px;
+        text-align: justify;
+      }
+      .main {
+        background-color: #e7e1d1;
+      }
+      .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin{
+        margin-top: 0px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      {%include header.html%}
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 aside">
+          {%include sidebar.html%}
+        </div>
+        <div class="col-sm-9 main">
+          <div class="container" style="margin-left:0px">
+            {{content}}
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container-fluid">
+        {%include footer.html%}
+    </div>
+
+  </body>
+</html>

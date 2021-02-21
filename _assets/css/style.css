@@ -1,0 +1,241 @@
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+	 
+	body, td {
+	font-size: 9pt; 
+	line-height: 13pt; 
+	font-weight: normal;	
+	color: #000000;  }
+	.input_button {border: 1px solid #ffffff; font-size: 8pt; line-height: 10pt; background-color:#023d68; color:#ffffff; width:75px; height:20px; }
+	.input_text { font-family: Arial; border: 1px solid #575D65; font-size: 8pt; line-height: 11pt; color: #353C44; background-color:#ffffff;   } 	
+	.table_headList { background-color:#666666; font-weight: bold; color: #666666;	line-height: 12pt; text-align:center; }
+	.table_Left { text-align:left; }
+	.table_gray { background-color:#F2F2F2;  }
+	.bodyColorTableRow { background-color:#CCD7DB; }
+	.centerPossition { text-align:center;  }
+	.product { padding-top:10px; padding-left:10px;}
+	.text1 h1{	font-size:1.4em;
+	padding:0px 0px 15px 0px;
+	text-transform:uppercase;
+	}
+	.text1{
+	width:600px;
+	padding-left:20px;
+	color:#333333;
+	}	
+	.text1 b{font-size:14px;
+	font-weight:normal;
+	}
+	select{ font-size: 9pt;
+	}
+	body {
+	background-image:url(../images/bg_ft.jpg);
+	background-repeat:repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	p{
+text-align: justify;
+text-indent: 0px;
+}
+	.bodyStyle { background:url(../images/index_13.jpg); background-position:top; background-repeat:repeat-x; bgcolor:#FFFFFF; padding-left:15px; padding-right:15px; }
+	
+	.bold { font-weight:bold; }
+	.item { line-height: 14pt; font-weight: bold; font-size: 10pt;  color: #35608b;}
+	.header{ 	font-size:1.4em;
+	padding:0px 0px 15px 0px;
+	text-transform:uppercase;}
+	.GoldTxt{ color: #362200; }
+	.GoldTxt1{ color: #362200; line-height: 19pt; font-weight: bold; font-size: 11pt;}
+	.WhTxt{ color: #ffffff; font-size: 8pt; padding:5px;}
+	.boldIn {  font-size: 10pt;     font-weight: bold;  }
+	.copyRight { color: #523400; font-size: 8pt; }
+	.txtFotter { color: #666666;	 font-size: 8pt;      }	
+	.txtFotterDesc { color: #666666; font-size: 8pt;  text-align:center; }	
+	.headerStyle { padding-top:5px; padding-left:8px;  }
+	.bodyTop{ padding-left:13px; padding-right:20px; }
+	.bodyText{ padding-left:8px; padding-right:10px; }	
+	.paddMenu { padding-left:22px; padding-top:5px;}
+	.paddBody { padding-left:35px; padding-right:35px;  }
+	.paddLeft { padding-left:20px; padding-right:20px;   }
+	.paddBody p{ color:#333333;}
+	.imgab img{
+	border:#7f5406 4px solid;
+	padding:1px;
+	}
+	.brimg{
+	border:#7f5406 4px solid;
+	padding:1px;
+	}
+	.tx {
+		FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #262626
+	}
+	
+	#trackbacks-list A:hover {
+		PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #d00; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px; BORDER-BOTTOM: #818181 1px solid
+	}
+
+	
+	
+	.bd {
+	border:#7f5406 4px solid; 
+	padding:2px;
+	}
+	
+	.bdFlag {
+		BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid;
+	}
+	
+	
+	.hand{ 	cursorointer; 	cursor:hand; 
+	}
+	
+	#menuHome{ padding-left:62px; }
+	#menuContact { padding-left:45px; }
+	
+	A.menu:link  {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none; line-height: 15pt;
+	}
+	A.menu:visited {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none; line-height: 15pt;
+	}
+	A.menu:hover {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: underline; line-height: 15pt;
+	}
+	A.menuGo:link  {
+		FONT-SIZE: 8pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuGo:visited {
+		FONT-SIZE: 8pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuGo:hover {
+		FONT-SIZE: 8pt; COLOR: #c78e1e; font-weight: bold; TEXT-DECORATION: underline;
+	}
+	A.menuList:link  {
+		FONT-SIZE: 8pt; COLOR: #442e03; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuList:visited {
+		FONT-SIZE: 8pt; COLOR: #442e03; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuList:hover {
+		FONT-SIZE: 8pt; COLOR: #790000; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A:link  {
+		COLOR: #442e03;  font-weight: normal; TEXT-DECORATION: none;
+	}
+	A:visited {
+		COLOR: #442e03; font-weight: normal; TEXT-DECORATION: none;
+	}
+	A:hover {
+		COLOR: #790000; font-weight: normal; TEXT-DECORATION: none;
+    }
+    <STYLE TYPE="text/css">
+   <!--
+     .myfont1 {   }
+	body, td {
+	font-size: 9pt; 
+	line-height: 13pt; 
+	font-weight: normal;	
+	color: #000000;  }
+	.input_button {border: 1px solid #ffffff; font-size: 8pt; line-height: 10pt; background-color:#023d68; color:#ffffff; width:75px; height:20px; }
+	.input_text { font-family: Arial; border: 1px solid #575D65; font-size: 8pt; line-height: 11pt; color: #353C44; background-color:#ffffff;   } 	
+	.table_headList { background-color:#666666; font-weight: bold; color: #666666;	line-height: 12pt; text-align:center; }
+	.table_Left { text-align:left; }
+	.table_gray { background-color:#F2F2F2;  }
+	.bodyColorTableRow { background-color:#CCD7DB; }
+	.centerPossition { text-align:center;  }
+	.product { padding-top:10px; padding-left:10px;}
+	
+	select{ font-size: 9pt;
+	}
+	body {
+	background-image:url(../images/bg_ft.jpg);
+	background-repeat:repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	p{
+text-align: justify;
+text-indent: 40px;
+}
+	.bodyStyle { background:url(../images/index_13.jpg); background-position:top; background-repeat:repeat-x; bgcolor:#FFFFFF; padding-left:15px; padding-right:15px; }
+	
+	.bold { font-weight:bold; }
+	.item { line-height: 14pt; font-weight: bold; font-size: 10pt;  color: #35608b;}
+	.header{ line-height: 19pt; color: #442e03; font-weight: bold; font-size: 16pt; padding-bottom:15px}
+	.GoldTxt{ color: #362200; }
+	.GoldTxt1{ color: #362200; line-height: 19pt; font-weight: bold; font-size: 11pt;}
+	.WhTxt{ color: #ffffff; font-size: 8pt; }
+	.boldIn {  font-size: 10pt;     font-weight: bold;  }
+	.copyRight { color: #523400; font-size: 8pt; }
+	.txtFotter { color: #666666;	 font-size: 8pt;      }	
+	.txtFotterDesc { color: #666666; font-size: 8pt;  text-align:center; }	
+	.headerStyle { padding-top:5px; padding-left:8px;  }
+	.bodyTop{ padding-left:13px; padding-right:20px; }
+	.bodyText{ padding-left:8px; padding-right:10px; }	
+	.paddMenu { padding-left:22px; padding-top:5px;}
+	.paddBody { padding-left:35px; padding-right:35px;   }
+	.paddLeft { padding-left:20px; padding-right:20px;   }
+	
+	.tx {
+		FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #262626
+	}
+	
+	#trackbacks-list A:hover {
+		PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #d00; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px; BORDER-BOTTOM: #818181 1px solid
+	}
+
+	
+	
+	.bd {
+	border:#7f5406 4px solid; 
+	padding:2px;
+	}
+	
+	.bdFlag {
+		BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid;
+	}
+	
+	
+	.hand{ 	cursorointer; 	cursor:hand; 
+	}
+	
+	#menuHome{ padding-left:62px; }
+	#menuContact { padding-left:45px; }
+	
+	A.menu:link  {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none; line-height: 15pt;
+	}
+	A.menu:visited {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none; line-height: 15pt;
+	}
+	A.menu:hover {
+		FONT-SIZE: 9pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: underline; line-height: 15pt;
+	}
+	A.menuGo:link  {
+		FONT-SIZE: 8pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuGo:visited {
+		FONT-SIZE: 8pt; COLOR: #400501; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuGo:hover {
+		FONT-SIZE: 8pt; COLOR: #c78e1e; font-weight: bold; TEXT-DECORATION: underline;
+	}
+	A.menuList:link  {
+		FONT-SIZE: 8pt; COLOR: #442e03; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuList:visited {
+		FONT-SIZE: 8pt; COLOR: #442e03; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A.menuList:hover {
+		FONT-SIZE: 8pt; COLOR: #790000; font-weight: bold; TEXT-DECORATION: none;
+	}
+	A:link  {
+		COLOR: #442e03;  font-weight: normal; TEXT-DECORATION: none;
+	}
+	A:visited {
+		COLOR: #442e03; font-weight: normal; TEXT-DECORATION: none;
+	}
+	A:hover {
+		COLOR: #790000; font-weight: normal; TEXT-DECORATION: none;
+	}

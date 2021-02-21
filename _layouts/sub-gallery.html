@@ -1,0 +1,76 @@
+---
+layout: page
+---
+<a href="javascript:history.back()"> < < Go Back</a>
+<hr>
+{{content}}
+<div class="masonry">
+{% for file in site.static_files %}
+
+{% assign pagename = page.name | replace: ".md","" %}
+{% if file.name contains pagename %}
+
+{% assign filenameparts = file.path | split: "/" %}
+{% assign filename = filenameparts | last | replace: file.extname,"" %}
+{% assign current = page.name | split: "." | first %}
+
+{% if file.path contains current %}
+
+<div class="item">
+<a id="grouped_elements" rel="group1" href="{{ file.path | relative_url }}" title="{{ filename }}">
+<img src="{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}" width="100%"><br>
+<span>{{ filename }}</span>
+</a>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
+
+
+
+<style>
+    #single_image:hover{
+        opacity: 0.5;
+    }
+
+    .masonry { /* Masonry container */
+        column-count: 1;
+        column-gap: 1em;
+    }
+
+    .item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+
+/* This is basic - uses default settings */
+
+$("a#single_image").fancybox();
+
+/* Using custom settings */
+
+$("a#inline").fancybox({
+    'hideOnContentClick': true
+});
+$("a#grouped_elements").fancybox();
+
+/* Apply fancybox to multiple items */
+
+$("a.group").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600, 
+    'speedOut'		:	200, 
+    'overlayShow'	:	false,
+    'width'         :   100
+});
+
+});
+</script>

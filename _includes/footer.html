@@ -1,0 +1,19 @@
+<div class="row">
+
+  <div class="col-12" style="background-color: #dfd5c9; color: #362200; margin: 0px; padding: 0px;">
+    <hr style="border: 1px solid #825600; margin: 0px;">
+    <p style="padding: 5px 10px;">
+      {% assign site_page = site.pages | sort: "pindex" %}
+      {% for page in site_page | sort: "pindex" %}
+        {% if page.pindex>0 %}
+          <a href="{{ page.url }}">{{page.title}} </a>|
+        {% endif %}
+      {% endfor %}
+    </p>
+    <p style="padding: 0px 10px 5px;">
+      Copyright 2002-2013 Siam Old Teak. All rights reserved. <a href="http://sornkak.com/" target="_blank" class="list"><span class="copyRight">Design and Maintenance by Sornkak.com</span></a>
+    </p>
+
+    
+  </div>
+</div>

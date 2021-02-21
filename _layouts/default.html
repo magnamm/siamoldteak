@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="row"style="
+    background-color: #dfd5c9;
+    padding: 20px;
+    
+    ">
+      <img src="{{ '/images/logo.jpg' | relative_url }}" height="120px">
+    </div>
+    <nav class="row" style="
+      background-color: #dfd5c9;
+      padding: 20px;
+      
+      ">
+      <div class="col-sm-2">
+        <ul>
+        <li>Home</li>
+        <li>The Process</li>
+        <li>Materials</li>
+        <li>Private Commissions</li>
+        <li>Corporate Commissions</li>
+        <li>Bespoke</li>
+        <li>About Siam Old Teak</li>
+        <li>Service</li>
+        <li>Buy with Confidence</li>
+        <li>Ethical Policy</li>
+        <li>Overseas Orders</li>
+        <li>Map</li>
+        <li>Links</li>
+        <li>Contact</li>
+      </ul>
+      </div>
+
+      <div class="col-sm-10">
+        {%include product.html%}
+        <!-- {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}s
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%} -->
+      </div>
+
+    </nav>
+    <main class="row">
+      <div class="side-bar col-sm-3" style="height: 100%;">
+      {% include sidebar.html %}
+      </div>
+      <div class="main col-sm-9">
+      {{ content }}
+    </div>  
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
